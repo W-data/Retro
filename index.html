@@ -1,31 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro</title>
-    <style>
-        .title {
-            background-color: white;
-            margin: auto;
-            height: 33px;
-            width: 86px;
-            text-align: center; /* Center-aligns the text inside the div */
-            padding: 10px; /* Adds space inside the div */
-            border: 1px solid black; /* Adds a border to the div (optional) */
-        }
+<!DOCTYPE html>  
+<html lang="en">  
+<head>    
+<meta charset="UTF-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<title>Retro</title>
+<style>
+    body {
+        background: linear-gradient(-45deg, navy, #001f4d, #003366);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
 
-        body {
-            background-color: #D3D3D3; /* Sets the background color for the body */
-            text-align: center; /* Center-aligns the div horizontally within the body */
-        }
-    </style>
-</head>
-<body>
+    #nav {
+        display: flex;
+        flex-direction: column; /* Adjusted to column layout */
+        align-items: center;
+        margin-top: 20px; /* Adjust as needed */
+    }
 
-    <div class="title">
-        <h1>Retro</h1>
-    </div>
+    #nav span {
+        font-size: 36px; /* Larger font size for the text */
+        margin-bottom: 20px; /* Increased space between text and buttons */
+    }
 
-</body>
+    #nav a {
+        display: flex; /* Use flexbox for better alignment */
+        align-items: center; /* Align text and image vertically */
+        justify-content: space-between; /* Space between text and image */
+        padding: 15px 40px 15px 20px; /* Increased padding for larger buttons */
+        margin: 10px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        font-size: 24px; /* Larger font size for buttons */
+        border-radius: 8px; /* Slightly increased border radius */
+        transition: background-color 0.3s ease;
+        background-position: calc(100% - 7px) center; /* Adjusted position to shift right */
+        background-repeat: no-repeat; /* Prevent image from repeating */
+        background-size: 24px auto; /* Adjust image size */
+    }
+
+    #nav a.SMW {
+        background-image: url('https://www.pngkey.com/png/detail/168-1684500_super-mario-world-application-16-bit-pixel-mario.png');
+    }
+
+    #nav a.SMW-hacks {
+        background-image: url('https://www.pngkey.com/png/detail/168-1684500_super-mario-world-application-16-bit-pixel-mario.png');
+    }
+
+    #nav a:hover {
+        background-color: grey;
+    }
+</style>
+
+</head>  
+<body>    
+
+<div id="nav">
+    <span>Retro</span>
+    <a href="Temp" class="SMW">Super Mario World</a>
+    <a href="Temp" class="SMW-hacks">Super Mario World Hacks</a>
+</div>
+
+</body>  
 </html>
